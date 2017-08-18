@@ -64,10 +64,21 @@ iniciou o servidor.
 Observação
 ----------
 
+Nem todas as funcionalidades estão prontas para uso. Seguem algumas
+observações sobre o estado atual do sistema.
+
 Atualmente, o servidor grava o conteúdo do banco de dados em memória,
 não em um arquivo, então após fechar o servidor, o banco de dados é
 zerado. Isso facilita testes, mas é claro que isso não seria feito
 em produção.
+
+Atualmente, quando você cria uma conta de usuário, nada é feito com
+o endereço de e-mail fornecido, apesar de os termos de uso relatarem
+que é necessário fornecer um e-mail válido.
+
+Atualmente, o sistema não grava os times no banco de dados. Quando
+você sai da página de gerência de times, os times que você montou
+são perdidos.
 
 Licença
 -------
