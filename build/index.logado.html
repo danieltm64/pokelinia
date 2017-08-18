@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Pokélinia - Bem-vindo</title>
+
+    <!-- Estilos -->
+
+    <link rel="stylesheet" href="terceiros/jqwidgets/styles/jqx.custom_base.css" type="text/css" />
+    <link rel="stylesheet" href="terceiros/jqwidgets/styles/jqx.custom_office_dark_blue.css" type="text/css" />
+    <link rel="stylesheet" href="terceiros/jqwidgets/styles/jqx.custom_office_light_blue.css" type="text/css" />
+
+    <link rel="stylesheet" href="index.logado.css" type="text/css" />
+
+    <!-- Scripts -->
+
+    <script type="text/javascript" src="terceiros/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="terceiros/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="terceiros/jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="terceiros/jqwidgets/jqxresponsivepanel.js"></script>
+
+    <script type="text/javascript" src="index.logado.js"></script>
+</head>
+<body>
+<center>
+    <div id="fundoDoTopo"></div>
+    <a id="a_logo"><img id="img_logo" src="imagens/pokelinia-topo.png" /></a>
+    <div id="jqxMenu_menuPrincipal">
+        <ul>
+            <li><a id="menu_bemVindo" class="paginaAtual" href="../../index.html">[ Bem-vindo ]</a></li>
+            <li>
+                <span>Minha Conta (<!-- pdi_nomeDoUsuarioLogado -->)</span>
+                <ul style="width: 148px;">
+                    <li><a id="menu_gerenciarTimes" href="paginas/gerenciarTimes/gerenciarTimes.html">Gerenciar Times</a></li>
+                    <li><a id="menu_sairDaConta" href="paginas/sairDaConta/sairDaConta.html">Sair da Conta</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="div_main">
+        <div id="jqxPanel_main">
+            <div class="div_conteudo">
+                <h1>Bem-vindo</h1>
+                <img class="img_lateral" src="imagens/bem-vindo.png" />
+                <p class="p_lateral">
+                    Olá, seja bem-vindo à Pokélinia!
+                </p>
+                <p>
+                    Vá para a página 'Gerenciar Times' para montar o seu time
+                    de Pokémons!
+                </p>
+            </div>
+        </div>
+    </div>
+</center>
+</body>
+</html>

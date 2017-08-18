@@ -1,0 +1,23 @@
+#jqxPanel_main
+{
+    padding-bottom: 8px;
+}
+
+.barraDeFerramentas
+{
+    padding-bottom: 4px;
+}
+
+#div_criarTime_semiCentralizado
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 385px;
+}
+
+#center_acaoPokemon_semiCentralizado
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 630px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Pokélinia - Minha Conta</title>
+
+    <!-- Estilos -->
+
+    <link rel="stylesheet" href="../../terceiros/jqwidgets/styles/jqx.custom_base.css" type="text/css" />
+    <link rel="stylesheet" href="../../terceiros/jqwidgets/styles/jqx.custom_office_light_blue.css" type="text/css" />
+    <link rel="stylesheet" href="../../terceiros/jqwidgets/styles/jqx.custom_office_dark_blue.css" type="text/css" />
+
+    <link rel="stylesheet" href="minhaConta.css" type="text/css" />
+
+    <!-- Scripts -->
+
+    <script type="text/javascript" src="../../terceiros/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxresponsivepanel.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxpasswordinput.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxtooltip.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxwindow.js"></script>
+    <script type="text/javascript" src="../../terceiros/js-cookie/js.cookie.js"></script>
+
+    <script type="text/javascript" src="minhaConta.js"></script>
+</head>
+<body>
+<center>
+    <div id="fundoDoTopo"></div>
+    <a id="a_logo"><img id="img_logo" src="../../imagens/pokelinia-topo.png" /></a>
+    <div id="jqxMenu_menuPrincipal">
+        <ul>
+            <li><a id="menu_bemVindo" href="../../index.html">Bem-vindo</a></li>
+            <li><a id="menu_minhaConta" class="paginaAtual">[ Minha Conta ]</a></li>
+        </ul>
+    </div>
+
+    <div id="div_main">
+        <div id="jqxPanel_main">
+            <div class="div_conteudo">
+                <center>
+                    <h1 style="text-align: left;">Logar</h1>
+                    <form action="form_login" method="post">
+                        <table id="table_login">
+                            <tr>
+                                <td>Nome de Usuário:</td>
+                                <td>Senha:</td>
+                            </tr>
+                            <tr>
+                                <td><input id="jqxInput_login_nomeDeUsuario" type="text" /></td>
+                                <td><input id="jqxPasswordInput_login_senha" type="password" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input id="jqxButton_login_logar" style="margin-left: 186px;" type="button" value="Logar" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <h1 style="text-align: left;">Criar Conta</h1>
+                    <form action="form_criarConta" method="post">
+                        <table id="table_criarConta">
+                            <tr>
+                                <td>Nome de Usuário:</td>
+                                <td>Senha:</td>
+                            </tr>
+                            <tr>
+                                <td><input id="jqxInput_criarConta_nomeDeUsuario" type="text" /></td>
+                                <td><input id="jqxPasswordInput_criarConta_senha" type="password" /></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail:</td>
+                                <td>Confirmar Senha:</td>
+                            </tr>
+                            <tr>
+                                <td><input id="jqxInput_criarConta_email" type="text" /></td>
+                                <td><input id="jqxPasswordInput_criarConta_senhaDeConfirmacao" type="password" /></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><input id="jqxButton_criarConta_visualizarTermosDeUso" type="button" value="Visualizar Termos de Uso" /></td>
+                                <td><div id="jqxCheckBox_criarConta_aceitarTermosDeUso">Concordo com os Termos de Uso.</div></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input id="jqxButton_criarConta_criarConta" style="margin-left: 186px;" type="button" value="Criar Conta"  /></td>
+                            </tr>
+                        </table>
+                    </form>
+                </center>
+            </div>
+        </div>
+        <div id="jqxWindow_criarConta_termosDeUso">
+            <div>Termos de Uso</div>
+            <div id="div_criarConta_termosDeUso" class="divDeJanela_criarConta">
+                <p>
+                    O uso de Pokélinia (O Software) está sujeito às observações abaixo.
+                </p>
+                <ul>
+                    <li>O Software é gratuito e de código aberto. Você pode usá-lo livremente.</li>
+                    <li>Pokémon não é marca registrada do autor do Software.</li>
+                    <li>As informações utilizadas pelo Software sobre os Pokémons são obtidas pela Pokéapi, que você encontra aqui: <a href="http://pokeapi.co/">http://pokeapi.co/</a>.</li>
+                    <li>Os dados que você fornecer ao Software não serão vendidos e nem compartilhados.</li>
+                    <li>É de sua responsabilidade garantir a validade do e-mail fornecido.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="jqxWindow_criarConta_aceitarTermosDeUso">
+            <div>Leia os Termos de Uso</div>
+            <div id="div_criarConta_aceitarTermosDeUso" class="divDeJanela_criarConta">
+                <p>
+                    Você precisa visualizar os Termos de Uso antes de poder concordar.
+                </p>
+                <p>
+                    Não se preocupe, é um documento bem curto.
+                </p>
+            </div>
+        </div>
+        <div id="jqxWindow_mensagem">
+            <div>Dados Inválidos</div>
+            <div id="div_criarConta_dadosInvalidos" class="divDeJanela_criarConta">
+                <p>
+                    Os dados fornecidos não são válidos.
+                </p>
+            </div>
+        </div>
+    </div>
+</center>
+</body>
+</html>

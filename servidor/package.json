@@ -1,0 +1,14 @@
+{
+  "name": "pokelinia-servidor",
+  "version": "1.0.0",
+  "description": "Pokélinia é um gerenciador de times de Pokémons.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Telles McGinnis",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "hasha": "^3.0.0"
+  }
+}

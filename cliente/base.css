@@ -1,0 +1,109 @@
+body
+{
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #222222;
+    visibility: hidden;
+}
+
+a
+{
+    color: #00a8f7;
+}
+
+#fundoDoTopo
+{
+    background-color: #222222;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+#img_logo
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+#jqxMenu_menuPrincipal
+{
+    position: fixed;
+    top: 99px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.paginaAtual
+{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#div_main
+{
+    text-align: left;
+    position: absolute;
+    top: 141px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+#jqxPanel_main
+{
+    position: relative;
+    top: -5px;
+}
+
+.div_conteudo
+{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    margin-top: -15px;
+}
+
+h1
+{
+    border-bottom: solid 1px;
+}
+
+.enfaseCorrente
+{
+    font-style: italic;
+    font-weight: bold;
+    color: #aaaaaa;
+}
+
+.img_lateral
+{
+    float: left;
+    padding-right: 8px;
+}
+
+.p_lateral
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.jqx-checkbox
+{
+    color: #ffffff;
+}
+
+.jqx-listbox
+{
+    border-color: #ffffff;
+}

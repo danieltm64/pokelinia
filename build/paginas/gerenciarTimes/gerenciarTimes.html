@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Pokélinia - Minha Conta - Gerenciar Times</title>
+
+    <!-- Estilos -->
+
+    <link rel="stylesheet" href="../../terceiros/jqwidgets/styles/jqx.custom_base.css" type="text/css" />
+    <link rel="stylesheet" href="../../terceiros/jqwidgets/styles/jqx.custom_office_light_blue.css" type="text/css" />
+    <link rel="stylesheet" href="../../terceiros/jqwidgets/styles/jqx.custom_office_dark_blue.css" type="text/css" />
+
+    <link rel="stylesheet" href="gerenciarTimes.css" type="text/css" />
+
+    <!-- Scripts -->
+
+    <script type="text/javascript" src="../../terceiros/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxresponsivepanel.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxcombobox.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="../../terceiros/jqwidgets/jqxwindow.js"></script>
+    <script type="text/javascript" src="../../terceiros/js-cookie/js.cookie.js"></script>
+
+    <script type="text/javascript" src="gerenciarTimes.js"></script>
+</head>
+<body>
+<center>
+    <div id="fundoDoTopo"></div>
+    <a id="a_logo"><img id="img_logo" src="../../imagens/pokelinia-topo.png" /></a>
+    <div id="jqxMenu_menuPrincipal">
+        <ul>
+            <li><a id="menu_bemVindo" href="../../index.html">Bem-vindo</a></li>
+            <li>
+                <span class="paginaAtual">[ Minha Conta (<!-- pdi_nomeDoUsuarioLogado -->) ]</span>
+                <ul style="width: 170px;">
+                    <li><a id="menu_gerenciarTimes" class="paginaAtual">[ Gerenciar Times ]</a></li>
+                    <li><a id="menu_sairDaConta" href="../sairDaConta/sairDaConta.html">Sair da Conta</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="div_main">
+        <div id="jqxPanel_main">
+            <div class="div_conteudo">
+                <h1>Times</h1>
+                <div class="barraDeFerramentas">
+                    <input id="jqxButton_criarTime" type="button" value="Criar Time" />
+                    <input id="jqxButton_excluirTime" type="button" value="Excluir Time" />
+                </div>
+                <div id="jqxDropDownList_times"></div>
+                <div id="espacoDeEdicaoDeTime">
+                    <h1>Pokémons</h1>
+                    <div class="barraDeFerramentas">
+                        <input id="jqxButton_adicionarPokemon" type="button" value="Adicionar Pokémon" />
+                        <input id="jqxButton_excluirPokemon" type="button" value="Excluir Pokémon" />
+                        <input id="jqxButton_editarPokemon" type="button" value="Editar Pokémon" />
+                    </div>
+                    <div id="jqxListBox_pokemons">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="jqxWindow_criarTime">
+            <div>Novo Time</div>
+            <div id="div_criarTime">
+                <div id="div_criarTime_semiCentralizado">
+                    <span>Nome:</span>
+                    <br />
+                    <input id="jqxInput_criarTime_nomeDoTime" type="text" />
+                    <input id="jqxButton_criarTime_criar" type="button" value="Criar" />
+                </div>
+            </div>
+        </div>
+        <div id="jqxWindow_acaoPokemon">
+            <div>Novo Pokémon</div>
+            <div id="div_acaoPokemon">
+                <div id="jqxGrid_acaoPokemon_nome"></div>
+                <p id="p_acaoPokemon_nomeSelecionado">Nome Selecionado:</p>
+                <div id="jqxGrid_acaoPokemon_habilidades"></div>
+                <br />
+                <span>Habilidades Selecionadas:</span>
+                <br />
+                <div id="jqxComboBox_acaoPokemon_habilidades"></div>
+                <br />
+                <center id="center_acaoPokemon_semiCentralizado">
+                    <input id="jqxButton_acaoPokemon_acao" type="button" value="Adicionar" />
+                </center>
+            </div>
+        </div>
+    </div>
+</center>
+</body>
+</html>

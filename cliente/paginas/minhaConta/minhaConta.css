@@ -1,0 +1,25 @@
+#jqxPanel_main
+{
+    padding-bottom: 8px;
+}
+
+#table_login
+{
+    position: relative;
+}
+
+#table_criarConta
+{
+    position: relative;
+}
+
+.divDeJanela_criarConta
+{
+    padding-top: 0px;
+    padding-left: 6px;
+}
+
+.divDeJanela_criarConta > ul
+{
+    padding-left: 20px;
+}
